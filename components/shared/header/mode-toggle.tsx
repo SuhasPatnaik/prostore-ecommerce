@@ -4,8 +4,6 @@ import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuContent,
   DropdownMenuCheckboxItem,
 } from "@/components/ui/dropdown-menu";
@@ -24,11 +22,11 @@ const ModeToggle = () => {
           asChild
         >
           {theme === "light" ? (
-            <SunIcon size={56} />
+            <SunIcon size={48} />
           ) : theme === "dark" ? (
-            <MoonIcon size={56} />
+            <MoonIcon size={48} />
           ) : (
-            <SunMoon size={56} />
+            <SunMoon size={48} />
           )}
         </Button>
       </DropdownMenuTrigger>
