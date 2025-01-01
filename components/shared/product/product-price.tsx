@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils";
+
 const ProductPrice = ({
   value,
   className,
@@ -10,7 +12,7 @@ const ProductPrice = ({
 
   return (
     <>
-      <p className="text-2xl">
+      <p className={cn("text-2xl", className)}>
         <span className="text-xs align-super">$</span>
         {integralValue}
         <span className="text-xs align-super">.{fractionalValue}</span>
